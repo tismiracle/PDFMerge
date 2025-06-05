@@ -8,7 +8,7 @@ class Merger:
         self.root = root
 
     def merge_files(self, paths, progress_bar, show_progress_bar):
-        self.merger = PyPDF2.PdfFileMerger()  
+        self.merger = PyPDF2.PdfMerger()
 
         for value, pdf in enumerate(paths):
             print(value)
